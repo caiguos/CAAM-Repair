@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/BladePlugin">
+        <file>mode_Blade.png</file>
+    </qresource>
+</RCC>

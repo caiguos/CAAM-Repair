@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MVSClass</class>
+ <widget class="QMainWindow" name="MVSClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1419</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MVS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1400</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_Control">
+     <attribute name="title">
+      <string>Control</string>
+     </attribute>
+     <widget class="QWidget" name="tab_Control_1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>4</y>
+        <width>1391</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <widget class="Robot::RobotWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>30</y>
+         <width>691</width>
+         <height>611</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_CameraDiaplay">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>650</width>
+         <height>541</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Display</string>
+       </property>
+       <widget class="QLabel" name="label_Display">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>651</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LabelDisplay</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_Camera">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>650</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Arial&quot;;</string>
+       </property>
+       <property name="title">
+        <string>Camera</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>621</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="label_RunStop">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Run/Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2" colspan="2">
+          <widget class="QLabel" name="label_Exposure">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Exposure</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4" colspan="2">
+          <widget class="QLabel" name="label_Gain">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Gain</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_SaveImage">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>SaveImage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_RunCamera">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_StopCamera">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit_Exposure"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_SetExposure">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="lineEdit_Gain"/>
+         </item>
+         <item row="1" column="5">
+          <widget class="QPushButton" name="pushButton_SetGain">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <widget class="QPushButton" name="pushButton_SaveImage">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>SaveImage</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_Robot">
+       <property name="geometry">
+        <rect>
+         <x>679</x>
+         <y>0</y>
+         <width>711</width>
+         <height>651</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Arial&quot;;</string>
+       </property>
+       <property name="title">
+        <string>Robot</string>
+       </property>
+      </widget>
+      <zorder>groupBox_Robot</zorder>
+      <zorder>widget</zorder>
+      <zorder>groupBox_CameraDiaplay</zorder>
+      <zorder>groupBox_Camera</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_Process">
+     <attribute name="title">
+      <string>Image Process</string>
+     </attribute>
+     <widget class="QWidget" name="tab_Process_1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1461</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <widget class="QGroupBox" name="groupBox_ImageProcess">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>10</y>
+         <width>1071</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>ImageProcess</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>640</width>
+          <height>52</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_OpenImage">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>OpenImage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QLabel" name="label_Threshold">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Threshold</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_ImageProcess">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>ImageProcess</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4" colspan="2">
+          <widget class="QLabel" name="label_Offset">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Offset</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLabel" name="label_ManualAdjustment">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Manual Adjustment</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_OpenImage">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Open</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_Threshold"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_SetThreshold">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_ImageProcess">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Process</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="lineEdit_Offset"/>
+         </item>
+         <item row="1" column="5">
+          <widget class="QPushButton" name="pushButton_SetOffset">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <widget class="QPushButton" name="pushButton_ManualAdjustment">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Adjust</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>30</y>
+          <width>331</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_RemovePoints">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>RemovePoints</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_SetPointSequence">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Select Point </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_GenerateVal3File">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Generate Val3 File</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_Remove">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Remove</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_SetSequence">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Select</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_GenerateVal3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 11pt &quot;Arial&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Generate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_ProcessResult">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>120</y>
+         <width>1381</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Process Result</string>
+       </property>
+       <widget class="QLabel" name="label_ProcessResult">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>1381</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LabelProcess</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1419</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Robot::RobotWidget</class>
+   <extends>QWidget</extends>
+   <header>RobotWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="mvs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
